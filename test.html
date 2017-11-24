@@ -1,0 +1,17 @@
+<html>
+<head>
+    <script src="test.js"></script>
+</head>
+<body>
+<script>
+    try {
+        V(null).required('없나요?').result();
+        V(123124124).required('없나요?').result();
+        V('dap').required('없나요?').result();
+        V('dap').required('없나요?').minlength(4,'짧네.').result();
+    } catch(e) {
+        console.log(e);
+    }
+</script>
+</body>
+</html>
